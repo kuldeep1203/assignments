@@ -6,6 +6,15 @@
 */
 
 function countVowels(str) {
+  const vowel=['a', 'e', 'i', 'o', 'u'];
+  let count=0;
+  let s =str.toLowerCase();
+  for(let i = 0; i < s.length; i++) {
+    if(vowel.includes(s[i])){
+      count++;
+    }
+  }
+  return count;
     // Your code here
 }
 
